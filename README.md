@@ -9,6 +9,7 @@ El proyecto retoma la mirada desarrollada originalmente en [**La tecnología vis
 Este proyecto no pretende ofrecer una explicación definitiva de la inteligencia artificial. Busca construir un **mapa parcial y provisional** que permita hacer visibles algunas de las relaciones y tensiones que acompañan su expansión, manteniendo la diferencia entre el mapa construido por el observador y el territorio dinámico que intenta representar.
 
 [Español](/documents/Español.md)
+[English](/documents/English.md)
 
 El repositorio también contiene los Skills y workflows utilizados para analizar y auditar el proyecto mediante una metodología modular y reutilizable.
 
