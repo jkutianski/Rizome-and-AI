@@ -421,6 +421,78 @@ agents/github-copilot.md
 
 The adapters explain how the same methodology is executed within each environment.
 
+### Commands
+
+The canonical command definitions are stored in:
+
+```text
+prompts/
+```
+
+The repository currently provides three commands:
+
+| Command | Purpose |
+| --- | --- |
+| `complete-39-round-audit` | Run the complete 39-round audit workflow. |
+| `validate-node-seven-steps` | Validate a node through Elements, Relations, Tensions, Concentration, Dynamic, Transformation, and Distinct Function. |
+| `validate-references` | Audit the existence, bibliographic correctness, relevance, evidential support, scope, and currency of references. |
+
+#### Visual Studio Code
+
+The commands are exposed as prompt files in `.github/prompts/`. In Copilot Chat, type `/` and select the command, or use **Chat: Run Prompt**. Provide the source, node, or scope requested by the command.
+
+Examples:
+
+```text
+/complete-39-round-audit
+/validate-node-seven-steps
+/validate-references
+```
+
+#### Codex
+
+Codex projections are stored in `.codex/prompts/`. Invoke them through the Codex prompt command using the projection name, for example:
+
+```text
+/prompts:complete-39-round-audit
+/prompts:validate-node-seven-steps
+/prompts:validate-references
+```
+
+Pass the source or candidate node in the same request when the prompt requires an input.
+
+#### Claude Code
+
+Claude Code command projections are stored in `.claude/commands/` and are invoked with `/`:
+
+```text
+/complete-39-round-audit documents/English.md
+/validate-node-seven-steps documents/English.md -- node candidate
+/validate-references documents/English.md
+```
+
+Claude command projections receive their request through `$ARGUMENTS` and load the canonical prompt from `prompts/`.
+
+#### Synchronization
+
+After adding or changing a canonical prompt, synchronize all projections with:
+
+```text
+python scripts/sync-agent-skills.py
+```
+
+Check synchronization without modifying files:
+
+```text
+python scripts/sync-agent-skills.py --check
+```
+
+The repository validator also checks the prompt projections:
+
+```text
+python scripts/validate-repository.py
+```
+
 ---
 
 ## Design Principles
