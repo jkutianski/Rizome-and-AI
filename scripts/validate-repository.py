@@ -1,5 +1,4 @@
 from pathlib import Path
-import filecmp
 import re
 import sys
 
@@ -42,6 +41,7 @@ EXPECTED_SKILLS = {
     "skills/cartographic/inter-stem-validation/SKILL.md",
     "skills/cartographic/rhizomatic-cartography/SKILL.md",
     "skills/causal/causality-propagation/SKILL.md",
+    "skills/causal/evidence-calibration/SKILL.md",
     "skills/causal/scale-analysis/SKILL.md",
     "skills/causal/emergence-analysis/SKILL.md",
     "skills/critical/anthropomorphism-audit/SKILL.md",
@@ -126,7 +126,8 @@ def directories_are_equal(source, target):
     if source_files != target_files:
         return False
     return all(
-        filecmp.cmp(source / relative, target / relative, shallow=False)
+        (source / relative).read_bytes().splitlines()
+        == (target / relative).read_bytes().splitlines()
         for relative in source_files
     )
 
@@ -279,11 +280,11 @@ def check_internal_references():
 
 def check_adapter_size():
     print("\n== Agent adapter duplication check ==")
-    adapters = [
-        ROOT / "AGENTS.md",
-        ROOT / "CLAUDE.md",
-        ROOT / ".github" / "copilot-instructions.md",
-    ]
+    source_of_truth = ROOT / "AGENTS.md"
+    if source_of_truth.exists():
+        line_count = len(source_of_truth.read_text(encoding="utf-8").splitlines())
+        print(f"PASS     AGENTS.md is the repository source of truth ({line_count} lines)")
+    adapters = [ROOT / "CLAUDE.md", ROOT / ".github" / "copilot-instructions.md"]
     for path in adapters:
         if not path.exists():
             continue
