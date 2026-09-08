@@ -142,6 +142,18 @@ workflows/
     comprehensive-39-round-audit/
                    Complete 39-round audit orchestration
 
+prompts/
+    Canonical cross-agent prompt definitions
+
+.codex/prompts/
+    Codex prompt projections
+
+.claude/commands/
+    Claude Code command projections
+
+.github/prompts/
+    Visual Studio Code prompt projections
+
 schemas/
     finding.md
     audit-state.md

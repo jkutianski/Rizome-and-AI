@@ -17,6 +17,9 @@ Codex
   │
   ├── AGENTS.md
   │
+  ├── .codex/prompts/
+  │     └── project prompt projections
+  │
   ├── workflows/
   │     └── comprehensive-39-round-audit/
   │
@@ -68,12 +71,16 @@ Prefer:
 
 ```text id="0l7f9e"
 AGENTS.md
+.codex/prompts/
 workflows/
 skills/
 schemas/
 ```
 
 as the primary methodological sources.
+
+Project prompts are authored canonically in `prompts/` and exposed to Codex through
+`.codex/prompts/`. Load the canonical prompt before executing a projection.
 
 Do not infer repository conventions from filenames alone.
 

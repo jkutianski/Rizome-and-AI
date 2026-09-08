@@ -16,6 +16,8 @@ This file does not duplicate or reinterpret those Skills.
 Claude Code
      │
      ├── CLAUDE.md
+   │
+   ├── .claude/commands/
      │
      ├── workflows/
      │
@@ -49,6 +51,10 @@ Do not begin analysis from conversational assumptions when repository state is a
 # 2. Skill Loading
 
 Claude Code should load only the Skills required for the task.
+
+Project commands are authored canonically in `prompts/` and exposed through
+`.claude/commands/`. Command projections use `$ARGUMENTS` and must load the
+corresponding canonical prompt before execution.
 
 Examples:
 

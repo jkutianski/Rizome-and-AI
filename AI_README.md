@@ -199,12 +199,20 @@ Rizome-and-AI/
 │   ├── claude-code.md
 │   └── github-copilot.md
 │
+├── prompts/
+│   └── canonical cross-agent prompt definitions
+│
 ├── AGENTS.md
 ├── CLAUDE.md
 ├── README.md
 └── .github/
-    └── copilot-instructions.md
+    ├── copilot-instructions.md
+    └── prompts/             Visual Studio Code projections
 ```
+
+Prompt projections are also exposed through `.codex/prompts/` for Codex and
+`.claude/commands/` for Claude Code. The canonical prompt definitions remain in
+`prompts/` so the three environments execute the same analytical instructions.
 
 ---
 
