@@ -18,4 +18,10 @@ El repositorio también contiene los Skills y workflows utilizados para analizar
 
 [AI Readme](AI_README.md)
 
+---
 
+## License / Licencia
+
+License information will be added when the repository's licensing decision is finalized.
+
+La información de licencia se añadirá cuando se finalice la decisión sobre la licencia del repositorio.
