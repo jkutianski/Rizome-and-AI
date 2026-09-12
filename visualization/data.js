@@ -1,0 +1,98 @@
+const nodes = [
+  { id: "language", label: "Language and computation", shortLabel: "Language", domain: "scientific", role: "node", kind: "concentration", size: 22, text: "Language becomes representable and manipulable through computational operations, without representation becoming understanding." },
+  { id: "math", label: "Mathematics, algorithms, and computing architecture", shortLabel: "Math / algorithms", domain: "scientific", role: "node", kind: "concentration", size: 19, text: "Linear algebra meets algorithmic operations and computing architecture when scale changes the conditions of execution." },
+  { id: "uncertainty", label: "Probability and prediction", shortLabel: "Probability", domain: "scientific", role: "node", kind: "probabilistic condition", size: 17, text: "Probability becomes part of the conditions of production: learned patterns shape what can come next, without determining it completely." },
+  { id: "plasticity", label: "Plasticity", shortLabel: "Plasticity", domain: "scientific", role: "node", kind: "transfer", size: 15, text: "An intuition associated with biology changes territory and becomes an adjustable relation inside synthetic architectures." },
+  { id: "blackbox", label: "Producing useful knowledge and understanding the mechanism", shortLabel: "Knowledge / mechanism", domain: "scientific", role: "node", kind: "epistemic limit", size: 18, text: "Useful prediction can exceed our ability to understand why a regularity works." },
+  { id: "gpu", label: "GPU and neural networks", shortLabel: "GPU / neural nets", domain: "technological", role: "node", kind: "encounter", size: 21, text: "An architecture developed for graphics encounters the mathematical needs of neural networks and helps reshape the industry." },
+  { id: "substrate", label: "Energy, water, and infrastructure", shortLabel: "Energy / infrastructure", domain: "technological", role: "node", kind: "condition", size: 20, text: "The abstract capacity to process information remains dependent on energy, heat dissipation, infrastructure, and physical resources." },
+  { id: "algorithmMatter", label: "Algorithm and infrastructure", shortLabel: "Algorithm / matter", domain: "technological", role: "node", kind: "feedback", size: 18, text: "Every change in how computation is organized transforms the demands placed on the infrastructure that executes it." },
+  { id: "archive", label: "Documentary archive", shortLabel: "Documentary archive", domain: "technological", role: "node", kind: "material", size: 16, text: "Digitized text, images, and audio become the material from which models extract regularities and reconstruct contexts." },
+  { id: "openness", label: "Openness and material conditions", shortLabel: "Openness", domain: "technological", role: "node", kind: "material condition", size: 17, text: "Open weights and tools broaden entry points, but access, execution, training, and modification still depend on different material conditions." },
+  { id: "work", label: "Work and learning practices", shortLabel: "Work / learning", domain: "sociocultural", role: "node", kind: "reconfiguration", size: 20, text: "AI redistributes cognitive effort, capabilities, and responsibility across practices of production and learning." },
+  { id: "power", label: "People, institutions, and states", shortLabel: "People / institutions", domain: "sociocultural", role: "node", kind: "condition", size: 18, text: "People, institutions, and states shape the relations and interests through which new concentrations acquire consistency." },
+  { id: "governance", label: "Trust, authorship, regulation, and legitimation", shortLabel: "Trust / authorship", domain: "sociocultural", role: "node", kind: "institutional condition", size: 16, text: "Regulatory and institutional responses do not simply arrive after technology; they condition what can be developed and adopted." },
+  { id: "cognition", label: "Human circuits of thought, writing, and decision-making", shortLabel: "Human-AI coupling", domain: "sociocultural", role: "node", kind: "feedback", size: 22, text: "The writing process becomes a site where a responsive tool can introduce variations and modify the course of cognition without requiring intention." },
+  { id: "mind", label: "AI + Philosophy of Mind: Consciousness, Understanding, and Agency", shortLabel: "Philosophy of mind", domain: "crossing", colorDomain: "scientific", role: "inter-stem", kind: "inter-stem node", size: 18, text: "AI behaviors feed back into the criteria used to decide what counts as understanding, consciousness, or agency." },
+  { id: "biology", label: "AI + Biology: From Describing to Designing", shortLabel: "Biology / design", domain: "crossing", colorDomain: "scientific", role: "inter-stem", kind: "inter-stem node", size: 18, text: "AI modifies the conditions under which biological practice functions, while biological problems feed back into processing and modeling." },
+  { id: "geopolitics", label: "AI + Geopolitics and Technological Sovereignty", shortLabel: "Geopolitics / sovereignty", domain: "crossing", colorDomain: "technological", role: "inter-stem", kind: "inter-stem node", size: 18, text: "A technological capability becomes strategic and reorganizes sovereignty, dependence, infrastructure, and territory." },
+  { id: "epistemicPower", label: "AI + Power, Relevance, and Authority", shortLabel: "Power / authority", domain: "crossing", colorDomain: "sociocultural", role: "inter-stem", kind: "inter-stem node", size: 18, text: "AI intervenes in the conditions under which information acquires relevance, authority, and legitimacy." },
+  { id: "knowledgeEval", label: "AI + Knowledge Evaluation", shortLabel: "Knowledge evaluation", domain: "crossing", colorDomain: "sociocultural", role: "inter-stem", kind: "inter-stem node", size: 18, text: "AI modifies the conditions under which a production can function as evidence that someone knows something." }
+];
+
+const linkRelations = [
+  ["language", "math", "enables"], ["math", "uncertainty", "reorganizes"], ["uncertainty", "blackbox", "tension", "forward"], ["plasticity", "math", "transfers"], ["plasticity", "algorithmMatter", "propagation"],
+  ["math", "gpu", "scales"], ["gpu", "algorithmMatter", "conditions"], ["algorithmMatter", "substrate", "feedback", "both"], ["archive", "language", "materializes"], ["archive", "openness", "tension", "forward"], ["substrate", "openness", "limits"],
+  ["cognition", "mind", "crosses"], ["cognition", "work", "reconfigures"], ["work", "power", "redistributes"], ["power", "governance", "conditions"], ["governance", "openness", "constrains"], ["blackbox", "knowledgeEval", "propagates"],
+  ["language", "mind", "crosses"], ["plasticity", "biology", "transfers"], ["algorithmMatter", "geopolitics", "conditions"], ["power", "geopolitics", "strategizes"], ["openness", "epistemicPower", "tensions", "both"], ["mind", "epistemicPower", "propagates"], ["biology", "geopolitics", "propagates"], ["geopolitics", "epistemicPower", "crosses"], ["epistemicPower", "knowledgeEval", "connects", "both"]
+];
+
+const relationCategories = {
+  enables: "conditioning",
+  reorganizes: "transformation",
+  tension: "tension",
+  transfers: "circulation",
+  propagation: "circulation",
+  propagates: "circulation",
+  scales: "transformation",
+  conditions: "conditioning",
+  feedback: "circulation",
+  materializes: "conditioning",
+  limits: "conditioning",
+  crosses: "circulation",
+  reconfigures: "transformation",
+  redistributes: "transformation",
+  constrains: "conditioning",
+  strategizes: "tension",
+  tensions: "tension",
+  connects: "circulation",  
+}
+
+const relationDescriptions = {
+  enables: "This relation makes another operation possible.",
+  reorganizes: "This relation changes how the neighboring concentration functions.",
+  tension: "This line marks a tension between two concentrations; the arrow shows its direction.",
+  transfers: "This relation carries an intuition from one assemblage into another.",
+  propagation: "This relation follows a transformation as it moves beyond its point of concentration.",
+  scales: "This relation changes the scale at which an operation can function.",
+  conditions: "This relation modifies the conditions under which another element operates.",
+  feedback: "This relation forms a feedback circuit between the two elements.",
+  materializes: "This relation supplies material conditions for another concentration.",
+  limits: "This relation places a material or operational limit on another concentration.",
+  crosses: "This relation crosses assemblage boundaries.",
+  reconfigures: "This relation reorganizes an existing practice or configuration.",
+  redistributes: "This relation redistributes capacities, responsibilities, or resources.",
+  constrains: "This relation narrows the conditions available to another element.",
+  strategizes: "This relation turns a technical capacity into a strategic capability.",
+  tensions: "This relation makes a tension between openness and epistemic power visible.",
+  connects: "This relation connects two distinct analytical positions."
+};
+
+const relationText = {
+  "language|math": "Language representations begin to rely on mathematical structures capable of transforming and comparing them at massive scale.",
+  "math|uncertainty": "The mathematical tools of statistics and probability introduce uncertainty into the generation process.",
+  "uncertainty|blackbox": "The ability to find regularities can, in some cases, exceed our ability to understand why those regularities work.",
+  "plasticity|math": "An intuition associated with biology changes territory and becomes part of architectures whose parameters can be adjusted through algorithms.",
+  "plasticity|algorithmMatter": "The idea of plasticity moves from biology through software toward hardware design and material computation.",
+  "math|gpu": "The need to execute mathematical operations at scale concentrates a relation between algorithms and computing architecture.",
+  "gpu|algorithmMatter": "An architecture developed for graphics encounters the computational needs of neural networks and reshapes the industry.",
+  "algorithmMatter|substrate": "Each modification in how computation is organized transforms the demands placed on the infrastructure that executes it.",
+  "archive|language": "Large corpora of text, images, and audio become material from which models extract regularities and construct representations.",
+  "archive|openness": "The documentary archive is not an inert repository; it is the material from which models extract regularities and reconstruct contexts.",
+  "substrate|openness": "The possibility of accessing a model does not guarantee the material conditions to run, train, or modify it.",
+  "cognition|mind": "Interaction with AI modifies the development of a cognitive process and shifts the boundaries of the cognitive system.",
+  "cognition|work": "AI modifies how production is organized, which capabilities become valuable, and how responsibility is redistributed.",
+  "work|power": "Work practices can generate new data, demands, and directions that intervene in the next cycle of technical development.",
+  "power|governance": "People, institutions, and states modify the relations and interests that give rise to new concentrations.",
+  "governance|openness": "Openness can expand possibilities, but regulation and institutional conditions shape how systems are developed and adopted.",
+  "blackbox|knowledgeEval": "The separation between producing useful knowledge and understanding its mechanism changes what can count as evidence.",
+  "language|mind": "The tension between syntax and semantics makes the criteria used to recognize understanding less stable.",
+  "plasticity|biology": "Biology moves from a source of intuitions for algorithmic architecture toward a space of simulation, prediction, and design.",
+  "algorithmMatter|geopolitics": "Material infrastructure becomes part of the power relations that condition who can develop certain capabilities.",
+  "power|geopolitics": "Technological capability modifies power relations, while power relations orient investments, restrictions, and industrial policies.",
+  "openness|epistemicPower": "Open models can expand intervention in knowledge mediation without eliminating concentrations in computing, data, and infrastructure.",
+  "mind|epistemicPower": "Questions of understanding and agency extend into the production, recognition, and legitimation of knowledge.",
+  "biology|geopolitics": "AI-assisted biological design can shift strategic value and industrial sovereignty toward those who control platforms, data, and production.",
+  "geopolitics|epistemicPower": "The control of technological capabilities connects strategic sovereignty with the capacity to intervene in knowledge mediation.",
+  "epistemicPower|knowledgeEval": "Relevance and authority do not by themselves determine that a production constitutes evidence of knowledge."
+};

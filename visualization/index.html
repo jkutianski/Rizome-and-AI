@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A provisional cartography of AI Seen from a Rhizome." />
+    <title>AI Seen from a Rhizome | Cartography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="shell">
+        <header class="masthead">
+            <div>
+                <p class="eyebrow">D3 / PROVISIONAL CARTOGRAPHY / 01</p>
+                <h1>AI Seen<br /><em>from a Rhizome</em></h1>
+            </div>
+            <div class="intro">
+                <p>A visual reading of the text: relations cross, tensions displace the field, and some transformations
+                    propagate.</p>
+                <p class="note">The map selects. It is not the territory.</p>
+            </div>
+        </header>
+
+        <section class="toolbar" aria-label="Map controls">
+            <div class="filters" role="group" aria-label="Filter by assemblage">
+                <button class="filter is-active" data-domain="all">All <span>19</span></button>
+                <button class="filter" data-domain="scientific">Scientific <span>5</span></button>
+                <button class="filter" data-domain="technological">Technological <span>5</span></button>
+                <button class="filter" data-domain="sociocultural">Sociocultural <span>4</span></button>
+                <button class="filter" data-domain="inter-stem">Inter-stem <span>5</span></button>
+            </div>
+            <button class="reset" id="reset" title="Reset the map">Reset view <span aria-hidden="true">↗</span></button>
+        </section>
+
+        <section class="map-layout">
+            <div class="map-frame">
+                <div class="map-meta"><span>RELATIONAL FIELD</span><span id="visible-count">14 nodes + 5 inter-stem / 26
+                        relations</span></div>
+                <svg id="map" role="img"
+                    aria-label="Rhizomatic map of relations between science, technology, and society"></svg>
+                <div class="map-footer"><span>Drag nodes</span><span>Scroll to zoom</span><span>Select a node</span>
+                </div>
+            </div>
+            <aside class="inspector" aria-live="polite">
+                <div class="inspector-top"><span class="eyebrow">INSPECTOR</span><span id="inspector-index">00</span>
+                </div>
+                <div id="inspector-content">
+                    <p class="select-prompt">Select a concentration to follow its relations and tensions.</p>
+                    <div class="signal-line"></div>
+                    <p class="small-copy">Scale, color, and proximity are decisions made by the map. Movement keeps the
+                        configuration open.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section class="reading-strip">
+            <div><span class="legend-dot scientific"></span><strong>Science</strong><small>concepts, operations,
+                    prediction</small></div>
+            <div><span class="legend-dot technological"></span><strong>Technology</strong><small>matter, infrastructure,
+                    formalization</small></div>
+            <div><span class="legend-dot sociocultural"></span><strong>Society</strong><small>practices, institutions,
+                    power</small></div>
+            <div><span class="legend-inter-stem"></span><strong>Inter-stem</strong><small>thick border = inter-stem; fill = primary assemblage
+                    assemblages</small></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
