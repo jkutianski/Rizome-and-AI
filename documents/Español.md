@@ -256,26 +256,6 @@ El nudo se conecta con **IA + Filosofía de la mente**, pero desde un problema d
 
 La IA no elimina la necesidad de evaluar el conocimiento; modifica las condiciones bajo las cuales una producción puede funcionar como evidencia de que alguien sabe algo. Cuando la relación entre resultado y capacidad deja de ser relativamente directa, evaluar implica determinar qué puede atribuirse a partir de esa producción y bajo qué condiciones.
 
-## Transformación
-
-Hasta aquí he intentado seguir algunas de las relaciones que participan en la expansión de la IA. Pero observar esas relaciones no significa solamente identificar qué tensiones están conectadas. También implica observar qué ocurre cuando una relación cambia y esa modificación afecta a otras.
-
-La expansión de la IA no consiste simplemente en incorporar una nueva tecnología a ámbitos que ya existían. A medida que la IA entra en contacto con diferentes ensamblajes, también modifica las condiciones bajo las cuales esos ensamblajes funcionan. El lenguaje se relaciona de otra manera con la computación cuando puede ser procesado y generado a gran escala. La producción de conocimiento cambia cuando una máquina puede intervenir en la búsqueda, organización y transformación de información. Las capacidades del hardware condicionan qué modelos pueden desarrollarse, mientras que los modelos generan nuevas demandas sobre el hardware. Las relaciones entre estos elementos dejan entonces de ser estáticas.
-
-Una transformación puede comenzar en un nudo y propagarse hacia otros. Un cambio en la arquitectura de un modelo puede modificar sus necesidades de cómputo; esas necesidades pueden impulsar nuevas formas de especialización del hardware; esa especialización puede hacer posibles modelos que antes no eran viables; y esos modelos pueden, a su vez, modificar las prácticas mediante las cuales producimos o evaluamos conocimiento. No hay necesariamente una dirección única en este proceso. Una transformación puede volver sobre las relaciones que la hicieron posible y modificar nuevamente sus condiciones.
-
-Esto también permite distinguir una relación de una transformación. Que dos elementos estén conectados no significa que esa conexión produzca necesariamente un cambio. La transformación aparece cuando la modificación de una relación altera las condiciones de otras relaciones y abre o cierra posibilidades dentro del conjunto. Lo que interesa entonces no es solamente dónde están los nudos, sino qué sucede cuando esos nudos cambian.
-
-Desde esta perspectiva, un nudo tampoco debería entenderse como una estructura fija. Una concentración de relaciones puede adquirir consistencia durante un tiempo y después desplazarse, dividirse, desaparecer o generar nuevas conexiones. El mapa registra una configuración, pero esa configuración forma parte de un proceso que continúa transformándose.
-
-Esto introduce también una dificultad para cualquier cartografía de la IA. El mapa que puedo construir hoy no representa una estructura definitiva. Representa una configuración situada en un momento determinado y desde una posición determinada. Algunas relaciones que hoy parecen centrales pueden perder relevancia, mientras que otras que todavía no reconocemos pueden adquirirla a través de nuevas transformaciones.
-
-La IA participa de este proceso de una manera particular porque no solamente es uno de los elementos que estoy intentando cartografiar. También puede intervenir en las relaciones mediante las cuales se construye el propio mapa. Al utilizarla para buscar conexiones, ordenar ideas o formular relaciones que antes no había considerado, el proceso de observación puede producir nuevas trayectorias dentro del mapa.
-
-La transformación, entonces, no ocurre solamente en aquello que observo. También puede ocurrir en la forma en que observo. Y esa diferencia resulta importante: si el mapa cambia mientras intento construirlo, la observación deja de ser una actividad completamente separada de aquello que intenta representar.
-
-Este texto sobre la transformación es un ejemplo de esto. El texto que lo precede me llevó a una nueva reflexión y, a partir de ella, inicié un intercambio con la IA que terminó dando forma a este bloque de texto. La transformación que intento describir no ocurre, entonces, solamente en el objeto que observo. También ocurre en el proceso mediante el cual intento comprenderlo.
-
 [^1]: Jurafsky, D., & Martin, J. H. (2026). [Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models, 3rd ed., online manuscript](https://web.stanford.edu/~jurafsky/slp3/).
 
 [^2]: Clark, A., & Chalmers, D. (1998). [The extended mind. *Analysis, 58*(1)](https://doi.org/10.1093/analys/58.1.7), 7–19.
