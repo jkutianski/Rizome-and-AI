@@ -51,14 +51,14 @@ body::before {
 .shell {
   max-width: 1500px;
   margin: auto;
-  padding: 44px clamp(20px, 5vw, 76px) 36px;
+  padding: 10px clamp(20px, 5vw, 76px) 10px;
 }
 
 .masthead {
   display: flex;
   justify-content: space-between;
   gap: 48px;
-  padding-bottom: 42px;
+  padding-bottom: 0px;
   border-bottom: 1px solid var(--ink);
 }
 
@@ -76,7 +76,7 @@ body::before {
 h1 {
   margin: 14px 0 0;
   max-width: 700px;
-  font-size: clamp(3.4rem, 8vw, 8.4rem);
+  font-size: clamp(1rem, 4vw, 4rem);
   line-height: .85;
   letter-spacing: -.06em;
   font-weight: 700;
@@ -109,7 +109,7 @@ h1 em {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 18px 0;
+  padding: 0px 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -162,7 +162,7 @@ button {
 .map-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
-  min-height: 670px;
+  min-height: 651px;
   border-bottom: 1px solid var(--ink);
 }
 
@@ -214,7 +214,7 @@ button {
 .map-meta {
   display: flex;
   justify-content: space-between;
-  padding: 18px 18px 0 0;
+  padding: 8px 18px 0 0;
 }
 
 #map {
@@ -228,7 +228,7 @@ button {
   position: absolute;
   left: 0;
   right: 18px;
-  bottom: 16px;
+  bottom: 8px;
   display: flex;
   justify-content: space-between;
   color: #8a8d84;
