@@ -256,6 +256,10 @@ El nudo se conecta con **IA + Filosofía de la mente**, pero desde un problema d
 
 La IA no elimina la necesidad de evaluar el conocimiento; modifica las condiciones bajo las cuales una producción puede funcionar como evidencia de que alguien sabe algo. Cuando la relación entre resultado y capacidad deja de ser relativamente directa, evaluar implica determinar qué puede atribuirse a partir de esa producción y bajo qué condiciones.
 
+## Cierre
+
+¿Qué relaciones permanecen fuera de lo que podemos ver, precisamente porque las herramientas con las que intentamos observar también condicionan aquello que somos capaces de reconocer?
+
 [^1]: Jurafsky, D., & Martin, J. H. (2026). [Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models, 3rd ed., online manuscript](https://web.stanford.edu/~jurafsky/slp3/).
 
 [^2]: Clark, A., & Chalmers, D. (1998). [The extended mind. *Analysis, 58*(1)](https://doi.org/10.1093/analys/58.1.7), 7–19.
