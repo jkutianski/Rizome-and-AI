@@ -252,6 +252,10 @@ The node connects with **AI + Philosophy of Mind**, but through a different prob
 
 AI does not eliminate the need to evaluate knowledge; it modifies the conditions under which an output can function as evidence that someone knows something. When the relationship between result and capacity ceases to be relatively direct, evaluation means determining what can be attributed from that output and under what conditions.
 
+## Closing
+
+What relationships remain outside what we are able to see, precisely because the tools we use to observe also condition what we are capable of recognizing?
+
 [^1]: Jurafsky, D., & Martin, J. H. (2026). [Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models, 3rd ed., online manuscript](https://web.stanford.edu/~jurafsky/slp3/).
 
 [^2]: Clark, A., & Chalmers, D. (1998). [The extended mind. *Analysis, 58*(1)](https://doi.org/10.1093/analys/58.1.7), 7–19.
