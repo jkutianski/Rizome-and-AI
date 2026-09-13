@@ -288,8 +288,7 @@ What relationships remain outside what we are able to see, precisely because the
 
 [^16]: Li, J., Wu, Z., Liu, G., Gokmen, T., & Chen, T. (2026). [In-memory Training on Analog Devices with Limited Conductance States via Multi-tile Residual Learning. Proceedings of the 29th International Conference on Artificial Intelligence and Statistics, 300](https://proceedings.mlr.press/v300/li26i.html), 3664–3672.
 
-[^17]: Morabito, A., De Simone, G., Pastorelli, R., Brunelli, L., et al. (2025). [Algorithms and tools for data-driven omics integration to achieve multilayer biological insights: A narrative review. Journal of Translational Medicine](https://doi.org/10.1186/s12967-025-06446-x
-), 23(1), 425.
+[^17]: Morabito, A., De Simone, G., Pastorelli, R., Brunelli, L., et al. (2025). [Algorithms and tools for data-driven omics integration to achieve multilayer biological insights: A narrative review. Journal of Translational Medicine](https://doi.org/10.1186/s12967-025-06446-x), 23(1), 425.
 
 [^18]: Lim, K. Y. T., Hilmy, A. H., & Kuok Zi Wei, B. (2025). [AI operators or creators? Two visions of agency and learning. UNESCO IdeasLAB](https://www.unesco.org/en/articles/ai-operators-or-creators-two-visions-agency-and-learning).
 
