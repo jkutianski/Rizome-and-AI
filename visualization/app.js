@@ -14,6 +14,7 @@ const tooltip = d3
   .attr('class', 'node-tooltip')
   .attr('role', 'tooltip')
   .attr('aria-hidden', 'true');
+
 let width = 800;
 let height = 610;
 let activeDomains = new Set(['all']);
@@ -98,7 +99,7 @@ function render() {
       return `link ${relationCategories[d.type]}`;
     })
     .attr('marker-end', 'url(#arrow)')
-    .attr('marker-start', 'url(#arrow)');
+    .attr('marker-start', (d) => d.direction === 'both' && 'url(#arrow)');
 
   const node = g
     .append('g')
@@ -256,6 +257,10 @@ function showRelationTooltip(event, linkData) {
   );
   const direction =
     linkData.direction === 'both' ? 'both directions' : 'forward direction';
+  const relationTypeText = 
+    relationCategories[linkData.type] === linkData.type ?
+    linkData.type :
+    `${relationCategories[linkData.type]}: ${linkData.type}`;
   const relationArrow = linkData.direction === 'both' ? '↔' : '→';
   const text =
     relationText[`${source.id}|${target.id}`] ||
@@ -263,7 +268,10 @@ function showRelationTooltip(event, linkData) {
   tooltip
     .attr('aria-hidden', 'false')
     .html(
-      `<strong>${source.label} ${relationArrow} ${target.label}</strong><span>${linkData.type} / ${direction}</span><p>${text}</p>`,
+      `<strong>${source.label} ${relationArrow} ${target.label}</strong>
+      <span>${relationTypeText}</span>
+      <span>${direction}</span>
+      <p>${text}</p>`,
     );
   moveTooltip(event);
 }
