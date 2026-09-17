@@ -226,7 +226,7 @@ Este nudo se conecta directamente con **IA + Evaluación del conocimiento**, per
 
 ### IA + Evaluación del conocimiento
 
-La evaluación del conocimiento parte de una operación que muchas veces permanece implícita: inferir algo que no podemos observar directamente, el conocimiento de un sujeto, a partir de aquello que sí podemos observar, como sus respuestas, producciones, explicaciones o resoluciones. La incorporación de IA generativa introduce una mediación adicional en esa relación. Una respuesta puede ser producida mediante la interacción entre una persona y un sistema, y su corrección no permite determinar por sí sola qué operaciones corresponden al sujeto, cuáles fueron realizadas con asistencia y qué capacidades pueden atribuirse efectivamente a quien presenta el resultado.
+La evaluación del conocimiento parte de una operación que muchas veces permanece implícita: inferir algo que no podemos observar directamente, el conocimiento de un sujeto, a partir de aquello que sí podemos observar, como sus respuestas, producciones, explicaciones o resoluciones. La incorporación de IA generativa introduce una mediación adicional en esa relación. Una respuesta puede ser producida mediante la interacción entre una persona y un sistema, y su corrección no permite determinar por sí sola qué operaciones corresponden al sujeto, cuáles fueron realizadas con asistencia y qué capacidades pueden atribuirse efectivamente a quien presenta el resultado.[^21]
 
 La tensión no consiste solamente en determinar si una producción fue realizada con IA, sino en que comienza a volverse menos estable la relación entre producción, evidencia y atribución de conocimiento. La evaluación pretende reconocer una capacidad a partir de una manifestación observable, pero cuando esa manifestación surge de una interacción entre sujeto y sistema, el resultado puede dejar de ofrecer una evidencia tan directa de aquello que se intenta evaluar. La IA modifica así las condiciones bajo las cuales una producción puede funcionar como evidencia de que alguien sabe algo.
 
@@ -299,3 +299,5 @@ La IA no elimina la necesidad de evaluar el conocimiento; modifica las condicion
 [^19]: Intel Corporation. (2026). [What is an AI PC?](https://www.intel.com/content/www/us/en/support/articles/000099561/processors/intel-core-ultra-processors.html) Intel Support Knowledge Base.
 
 [^20]: Google Cloud. (s.f.). [Cloud TPU](https://cloud.google.com/tpu). Google. Recuperado el 7 de septiembre de 2026.
+
+[^21]: Massachusetts Institute of Technology. (2024). [AI and education: Policy and practice](https://aiandeducation.mit.edu/report/).
