@@ -222,7 +222,7 @@ This node connects directly with **AI + Evaluation of Knowledge**, but from a di
 
 ### AI + Evaluation of Knowledge
 
-The evaluation of knowledge begins with an operation that often remains implicit: inferring something that we cannot observe directly—the knowledge of a subject—from what we can observe, such as their answers, outputs, explanations, or solutions. The incorporation of generative AI introduces an additional mediation into this relationship. An answer can be produced through the interaction between a person and a system, and its correctness does not by itself make it possible to determine which operations belong to the subject, which were performed with assistance, and which capabilities can effectively be attributed to the person presenting the result.
+The evaluation of knowledge begins with an operation that often remains implicit: inferring something that we cannot observe directly—the knowledge of a subject—from what we can observe, such as their answers, outputs, explanations, or solutions. The incorporation of generative AI introduces an additional mediation into this relationship. An answer can be produced through the interaction between a person and a system, and its correctness does not by itself make it possible to determine which operations belong to the subject, which were performed with assistance, and which capabilities can effectively be attributed to the person presenting the result.[^21]
 
 The tension does not consist merely in determining whether an output was produced with AI, but in the fact that the relationship between output, evidence, and attribution of knowledge begins to become less stable. Evaluation seeks to recognize a capacity from an observable manifestation, but when that manifestation emerges from an interaction between subject and system, the result may cease to provide such direct evidence of what is being evaluated. AI thus modifies the conditions under which an output can function as evidence that someone knows something.
 
@@ -295,3 +295,5 @@ What relationships remain outside what we are able to see, precisely because the
 [^19]: Intel Corporation. (2026). [What is an AI PC? Intel Support Knowledge Base](https://www.intel.com/content/www/us/en/support/articles/000099561/processors/intel-core-ultra-processors.html).
 
 [^20]: Google Cloud. (n.d.). [Cloud TPU. Google](https://cloud.google.com/tpu). Retrieved September 7, 2026.
+
+[^21]: Massachusetts Institute of Technology. (2024). [AI and education: Policy and practice](https://aiandeducation.mit.edu/report/).
