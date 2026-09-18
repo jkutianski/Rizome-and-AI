@@ -1,5 +1,7 @@
 # AI Viewed from a Rhizome
 
+_WARNING NOTE: This translation is literal in some cases, as I am not familiar with the technical English terminology for the philosophy domain and want to avoid using terms vaguely or misleadingly. I also used AI to help with the translation._
+
 ## Opening
 
 Something important that I should clarify is that I used AI to organize and polish the wording. The ideas, arguments, and responsibility for the content are mine. I did this because Andy Clark and David Chalmers's notion of the extended mind is especially relevant here;[^2] if I write about the impact of AI on society, experimenting with it as a possible extension of my own thinking is part of the problem that this text is trying to explore.
