@@ -1,6 +1,7 @@
 # La IA vista desde un rizoma / 
 
 [Lectura en español (recomendada / recommended)](README_ES.md)
+
 [English reading (read with caution)](README_EN.md)
 
 ---
