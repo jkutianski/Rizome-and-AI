@@ -18,6 +18,7 @@ Before performing substantive analytical work:
 4. If executing the complete audit, use `workflows/comprehensive-39-round-audit/SKILL.md`.
 5. Use the schemas in `schemas/` for findings, audit state, and decisions.
 6. Consult the appropriate adapter in `agents/` when working in a specific agent environment.
+7. Use the document `documents/Español.md` for spanish and `documents/English.md` for english.
 
 Do not duplicate detailed methodology from these files into this document.
 
