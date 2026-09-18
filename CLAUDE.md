@@ -16,6 +16,7 @@ Before substantive analytical work:
 4. If executing the complete audit, use `workflows/comprehensive-39-round-audit/SKILL.md`.
 5. Use `schemas/` for persistent findings, audit state, and decisions.
 6. Consult `agents/claude-code.md` for Claude-specific execution guidance.
+7. Use the document `documents/Español.md` for spanish and `documents/English.md` for english.
 
 ## Core Rule
 
