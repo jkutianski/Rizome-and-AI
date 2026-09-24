@@ -20,12 +20,13 @@ let height = 610;
 let activeDomains = new Set(['all']);
 let selectedId = null;
 let simulation;
+let currentZoomTransform = d3.zoomIdentity;
 
 function render() {
   width = mapFrame.clientWidth;
   height = window.innerWidth < 900 ? 570 : 610;
   initializeViewBox(width, height);
-  const g = svg.append('g');
+  const g = svg.append('g').attr('transform', currentZoomTransform);
   const defs = svg.append('defs');
   defs
     .append('marker')
@@ -43,9 +44,13 @@ function render() {
   const zoom = d3
     .zoom()
     .scaleExtent([0.65, 2.6])
-    .on('zoom', (event) => g.attr('transform', event.transform));
+    .on('zoom', (event) => {
+      currentZoomTransform = event.transform;
+      g.attr('transform', event.transform);
+    });
 
   svg.call(zoom);
+  svg.call(zoom.transform, currentZoomTransform);
 
   const visibleNodes = nodes.filter(
     (node) =>
@@ -366,5 +371,9 @@ document.querySelector('#reset').addEventListener('click', () => {
   resetInspector();
   render();
 });
-window.addEventListener('resize', render);
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(render, 150);
+});
 render();
