@@ -307,6 +307,7 @@ function hideTooltip() {
 
 function initializeViewBox(width, height) {
   svg.attr('viewBox', `0 0 ${width} ${height}`);
+  svg.style('height', `${height}px`);
   svg.selectAll('*').remove();
 }
 
