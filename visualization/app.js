@@ -117,6 +117,7 @@ function render() {
       (d) =>
         `node node-${d.colorDomain || d.domain} ${d.role === 'inter-stem' ? 'inter-stem' : 'ordinary-node'}`,
     )
+    .classed('is-selected', (d) => d.id === selectedId)
     .attr('aria-label', (d) => d.label)
     .attr('tabindex', 0)
     .on('mouseenter', (event, d) => {
@@ -131,6 +132,13 @@ function render() {
     })
     .on('blur', hideTooltip)
     .on('click', (_, d) => selectNode(d))
+    .on('dblclick', (event, d) => {
+      event.stopPropagation();
+      d.fx = null;
+      d.fy = null;
+      simulation.alphaTarget(0.3).restart();
+      setTimeout(() => simulation.alphaTarget(0), 200);
+    })
     .call(
       d3
         .drag()
@@ -169,6 +177,7 @@ function render() {
 
   simulation = d3
     .forceSimulation(visibleNodes)
+    .alpha(0.4)
     .force(
       'link',
       d3
@@ -312,8 +321,8 @@ function dragged(event, d) {
 }
 function dragEnded(event, d) {
   if (!event.active) simulation.alphaTarget(0);
-  d.fx = null;
-  d.fy = null;
+  // El nodo queda fijo (pinned) donde el usuario lo soltó, para que no se
+  // reordene solo en el próximo render (resize, filtro, selección).
 }
 function isString(value) {
   return typeof value === 'string' || value instanceof String;
