@@ -302,9 +302,9 @@ function dragged(event, d) {
   d.fy = event.y;
 }
 function dragEnded(event, d) {
-  if (!event.active) simulation.alphaTarget(0);
-  // El nodo queda fijo (pinned) donde el usuario lo soltó, para que no se
-  // reordene solo en el próximo render (resize, filtro, selección).
+  if (!event.active) {
+    simulation.alphaTarget(0);
+  };
 }
 function isString(value) {
   return typeof value === 'string' || value instanceof String;
