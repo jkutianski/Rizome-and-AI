@@ -82,17 +82,14 @@ function render() {
   const linkHitArea = g
     .append('g')
     .attr('class', 'link-hit-areas')
+    .attr('aria-hidden', 'true')
     .selectAll('line')
     .data(visibleLinks)
     .join('line')
     .attr('class', 'link-hit')
-    .attr('tabindex', 0)
-    .attr('aria-label', (d) => relationLabel(d))
     .on('mouseenter', (event, d) => showRelationTooltip(event, d))
     .on('mousemove', (event) => moveTooltip(event))
-    .on('mouseleave', hideTooltip)
-    .on('focus', (event, d) => showRelationTooltip(event, d))
-    .on('blur', hideTooltip);
+    .on('mouseleave', hideTooltip);
 
   const link = g
     .append('g')
@@ -119,18 +116,12 @@ function render() {
     )
     .classed('is-selected', (d) => d.id === selectedId)
     .attr('aria-label', (d) => d.label)
-    .attr('tabindex', 0)
     .on('mouseenter', (event, d) => {
       d3.select(event.currentTarget).raise();
       showTooltip(event, d);
     })
     .on('mousemove', (event) => moveTooltip(event))
     .on('mouseleave', hideTooltip)
-    .on('focus', (event, d) => {
-      d3.select(event.currentTarget).raise();
-      showTooltip(event, d);
-    })
-    .on('blur', hideTooltip)
     .on('click', (_, d) => selectNode(d))
     .on('dblclick', (event, d) => {
       event.stopPropagation();
@@ -252,16 +243,6 @@ function showTooltip(event, nodeData) {
   moveTooltip(event);
 }
 
-function relationLabel(linkData) {
-  const source = endpointById(
-    isString(linkData.source) ? linkData.source : linkData.source.id,
-  );
-  const target = endpointById(
-    isString(linkData.target) ? linkData.target : linkData.target.id,
-  );
-  return `${source.label} ${linkData.type} ${target.label}`;
-}
-
 function showRelationTooltip(event, linkData) {
   const source = endpointById(
     isString(linkData.source) ? linkData.source : linkData.source.id,
@@ -292,7 +273,7 @@ function showRelationTooltip(event, linkData) {
 
 function moveTooltip(event) {
   const bounds = mapFrame.getBoundingClientRect();
-  const tooltipWidth = 270;
+  const tooltipWidth = tooltip.node().getBoundingClientRect().width;
   const left = Math.min(
     event.clientX - bounds.left + 18,
     bounds.width - tooltipWidth - 12,
@@ -338,7 +319,6 @@ function resetInspector() {
 document.querySelectorAll('.filter').forEach((button) =>
   button.addEventListener('click', () => {
     let selectedDomain = button.dataset.domain;
-    console.log(activeDomains);
     if (selectedDomain === 'all') {
       activeDomains = new Set(['all']);
     } else {
