@@ -173,34 +173,34 @@ These distinctions are methodological constraints, not conclusions that every te
 ```text
 Rizome-and-AI/
 │
-├── skills/
-│   ├── _shared/
-│   ├── conceptual/
-│   ├── cartographic/
-│   ├── causal/
-│   ├── critical/
-│   ├── structural/
-│   ├── reader/
-│   ├── authorship/
-│   ├── epistemic/
-│   └── synthesis/
-│
-├── workflows/
-│   └── comprehensive-39-round-audit/
-│
-├── schemas/
-│   ├── finding.md
-│   ├── audit-state.md
-│   └── decision-record.md
-│
-├── agents/
-│   ├── agent-contract.md
-│   ├── codex.md
-│   ├── claude-code.md
-│   └── github-copilot.md
-│
-├── prompts/
-│   └── canonical cross-agent prompt definitions
+├── IA/
+│   ├── skills/
+│   │   ├── _shared/
+│   │   ├── conceptual/
+│   │   ├── cartographic/
+│   │   ├── causal/
+│   │   ├── critical/
+│   │   ├── structural/
+│   │   ├── reader/
+│   │   ├── authorship/
+│   │   ├── epistemic/
+│   │   └── synthesis/
+│   ├── workflows/
+│   │   └── comprehensive-39-round-audit/
+│   ├── schemas/
+│   │   ├── finding.md
+│   │   ├── audit-state.md
+│   │   └── decision-record.md
+│   ├── agents/
+│   │   ├── agent-contract.md
+│   │   ├── codex.md
+│   │   ├── claude-code.md
+│   │   └── github-copilot.md
+│   ├── prompts/
+│   │   └── canonical cross-agent prompt definitions
+│   └── scripts/
+│       ├── sync-agent-skills.py
+│       └── validate-repository.py
 │
 ├── AGENTS.md
 ├── CLAUDE.md
@@ -212,7 +212,7 @@ Rizome-and-AI/
 
 Prompt projections are also exposed through `.codex/prompts/` for Codex and
 `.claude/commands/` for Claude Code. The canonical prompt definitions remain in
-`prompts/` so the three environments execute the same analytical instructions.
+`IA/prompts/` so the three environments execute the same analytical instructions.
 
 ---
 
@@ -263,7 +263,7 @@ Integrate findings, examine originality, evaluate the ending, and produce a fina
 The Skills use shared methodological protocols in:
 
 ```text
-skills/_shared/
+IA/skills/_shared/
 ```
 
 These establish common rules for:
@@ -282,7 +282,7 @@ This prevents individual Skills from silently developing incompatible methodolog
 The repository includes a comprehensive workflow:
 
 ```text
-workflows/comprehensive-39-round-audit/SKILL.md
+IA/workflows/comprehensive-39-round-audit/SKILL.md
 ```
 
 The workflow orchestrates **39 consecutive analytical rounds** covering:
@@ -352,9 +352,9 @@ This distinction allows the system to preserve uncertainty, disagreement, reject
 See:
 
 ```text
-schemas/finding.md
-schemas/audit-state.md
-schemas/decision-record.md
+IA/schemas/finding.md
+IA/schemas/audit-state.md
+IA/schemas/decision-record.md
 ```
 
 ---
@@ -404,7 +404,7 @@ They do not provide different methodologies.
 Use:
 
 ```text
-workflows/comprehensive-39-round-audit/SKILL.md
+IA/workflows/comprehensive-39-round-audit/SKILL.md
 ```
 
 The workflow defines the order, state management, blind-pass restrictions, thresholds, and final synthesis.
@@ -414,9 +414,9 @@ The workflow defines the order, state management, blind-pass restrictions, thres
 Use the corresponding adapter:
 
 ```text
-agents/codex.md
-agents/claude-code.md
-agents/github-copilot.md
+IA/agents/codex.md
+IA/agents/claude-code.md
+IA/agents/github-copilot.md
 ```
 
 The adapters explain how the same methodology is executed within each environment.
@@ -426,7 +426,7 @@ The adapters explain how the same methodology is executed within each environmen
 The canonical command definitions are stored in:
 
 ```text
-prompts/
+IA/prompts/
 ```
 
 The repository currently provides three commands:
@@ -471,26 +471,26 @@ Claude Code command projections are stored in `.claude/commands/` and are invoke
 /validate-references documents/English.md
 ```
 
-Claude command projections receive their request through `$ARGUMENTS` and load the canonical prompt from `prompts/`.
+Claude command projections receive their request through `$ARGUMENTS` and load the canonical prompt from `IA/prompts/`.
 
 #### Synchronization
 
 After adding or changing a canonical prompt, synchronize all projections with:
 
 ```text
-python scripts/sync-agent-skills.py
+python IA/scripts/sync-agent-skills.py
 ```
 
 Check synchronization without modifying files:
 
 ```text
-python scripts/sync-agent-skills.py --check
+python IA/scripts/sync-agent-skills.py --check
 ```
 
 The repository validator also checks the prompt projections:
 
 ```text
-python scripts/validate-repository.py
+python IA/scripts/validate-repository.py
 ```
 
 ---

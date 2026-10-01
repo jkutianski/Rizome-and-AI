@@ -12,10 +12,10 @@ ${input:node}
 Use the following as the methodological authority:
 
 - [AGENTS.md](../../AGENTS.md)
-- [node-validation Skill](../../skills/cartographic/node-validation/SKILL.md)
-- [finding schema](../../schemas/finding.md)
-- [audit state schema](../../schemas/audit-state.md)
-- [decision record schema](../../schemas/decision-record.md)
+- [node-validation Skill](../skills/cartographic/node-validation/SKILL.md)
+- [finding schema](../schemas/finding.md)
+- [audit state schema](../schemas/audit-state.md)
+- [decision record schema](../schemas/decision-record.md)
 
 Read the source passage and the relevant surrounding context before assessing the candidate. Analyze the source in its original language and do not infer node status from the title, importance, length, or thematic visibility alone.
 
@@ -39,9 +39,9 @@ For each step, provide:
 Then provide:
 
 1. A final classification: **Validated Node**, **Partially Developed Node**, **Candidate Node**, **Thematic Grouping**, **Ordinary Relation**, or **Insufficient Evidence**.
-2. A structured finding using [schemas/finding.md](../../schemas/finding.md), separated from any decision.
+2. A structured finding using [schemas/finding.md](../schemas/finding.md), separated from any decision.
 3. The candidate's strongest supporting evidence and its strongest weakness.
 4. Its overlap or distinction relative to nearby nodes, if that can be established from the source.
 5. A recommendation: **Necessary**, **Advisable**, **Optional**, **Not Recommended**, or **Leave Unchanged**.
 
-Do not upgrade the candidate to an inter-stem node through this command alone. If the evidence suggests cross-assemblage status, record that as a separate question and recommend the [inter-stem-validation Skill](../../skills/cartographic/inter-stem-validation/SKILL.md). Do not invent missing relations, tensions, transformations, or evidence.
+Do not upgrade the candidate to an inter-stem node through this command alone. If the evidence suggests cross-assemblage status, record that as a separate question and recommend the [inter-stem-validation Skill](../skills/cartographic/inter-stem-validation/SKILL.md). Do not invent missing relations, tensions, transformations, or evidence.

@@ -63,8 +63,8 @@ La visualización debe entenderse como una **herramienta de exploración**, no c
 
 El repositorio también contiene los **Skills** y **workflows** utilizados para analizar, revisar y auditar el proyecto mediante una metodología modular y reutilizable.
 
-* [Skills](/skills/)
-* [Workflows](/workflows/)
+* [Skills](/IA/skills/)
+* [Workflows](/IA/workflows/)
 * [AI Readme](AI_README.md)
 
 Estos recursos forman parte del propio proceso de investigación y permiten documentar cómo distintas herramientas de inteligencia artificial pueden intervenir en la exploración, revisión y transformación del proyecto.

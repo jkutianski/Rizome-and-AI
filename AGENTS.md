@@ -13,11 +13,11 @@ The repository itself is the methodological source of truth.
 Before performing substantive analytical work:
 
 1. Read this file.
-2. Identify the applicable Skill in `skills/`.
-3. Load the relevant shared protocols from `skills/_shared/`.
-4. If executing the complete audit, use `workflows/comprehensive-39-round-audit/SKILL.md`.
-5. Use the schemas in `schemas/` for findings, audit state, and decisions.
-6. Consult the appropriate adapter in `agents/` when working in a specific agent environment.
+2. Identify the applicable Skill in `IA/skills/`.
+3. Load the relevant shared protocols from `IA/skills/_shared/`.
+4. If executing the complete audit, use `IA/workflows/comprehensive-39-round-audit/SKILL.md`.
+5. Use the schemas in `IA/schemas/` for findings, audit state, and decisions.
+6. Consult the appropriate adapter in `IA/agents/` when working in a specific agent environment.
 7. Use the document `documents/Español.md` for spanish and `documents/English.md` for english.
 
 Do not duplicate detailed methodology from these files into this document.
@@ -81,7 +81,7 @@ Distinguish source evidence from analytical inference and external evidence.
 
 ## Audit State
 
-Treat `schemas/audit-state.md` as persistent investigation memory.
+Treat `IA/schemas/audit-state.md` as persistent investigation memory.
 
 Do not silently delete previous findings, rejected hypotheses, decisions, or unresolved questions.
 
@@ -120,31 +120,42 @@ When editing is authorized, preserve the author's conceptual ownership, voice, a
 
 The conceptual methodology is shared across agents.
 
-Agent-specific files in `agents/` define execution adaptations only.
+Agent-specific files in `IA/agents/` define execution adaptations only.
 
 **The agent is interchangeable; the methodology is not.**
 
 ## Repository Map
 
 ```text
-skills/
-    _shared/       Shared analytical protocols
-    conceptual/    Conceptual and philosophical analysis
-    cartographic/  Map, nodes, connections, propagation
-    causal/        Causality, scale, emergence
-    critical/      Critical and adversarial analysis
-    structural/    Architecture, redundancy, contradiction
-    reader/        Reader-oriented analysis
-    authorship/    Observer, authorship, voice, phenomenology
-    epistemic/     Knowledge, evidence, power, authority
-    synthesis/     Originality, ending, integrated audit
-
-workflows/
-    comprehensive-39-round-audit/
-                   Complete 39-round audit orchestration
-
-prompts/
-    Canonical cross-agent prompt definitions
+IA/
+    skills/
+        _shared/       Shared analytical protocols
+        conceptual/    Conceptual and philosophical analysis
+        cartographic/  Map, nodes, connections, propagation
+        causal/        Causality, scale, emergence
+        critical/      Critical and adversarial analysis
+        structural/    Architecture, redundancy, contradiction
+        reader/        Reader-oriented analysis
+        authorship/    Observer, authorship, voice, phenomenology
+        epistemic/     Knowledge, evidence, power, authority
+        synthesis/     Originality, ending, integrated audit
+    workflows/
+        comprehensive-39-round-audit/
+                       Complete 39-round audit orchestration
+    schemas/
+        finding.md
+        audit-state.md
+        decision-record.md
+    prompts/
+        Canonical cross-agent prompt definitions
+    agents/
+        agent-contract.md
+        codex.md
+        claude-code.md
+        github-copilot.md
+    scripts/
+        sync-agent-skills.py
+        validate-repository.py
 
 .codex/prompts/
     Codex prompt projections
@@ -154,17 +165,6 @@ prompts/
 
 .github/prompts/
     Visual Studio Code prompt projections
-
-schemas/
-    finding.md
-    audit-state.md
-    decision-record.md
-
-agents/
-    agent-contract.md
-    codex.md
-    claude-code.md
-    github-copilot.md
 ```
 
 ## Final Principle

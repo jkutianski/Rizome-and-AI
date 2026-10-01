@@ -5,7 +5,7 @@ argument-hint: "Provide the source path, the text to analyze, and the output lan
 agent: "agent"
 ---
 
-Use the canonical prompt at [prompts/complete-39-round-audit.prompt.md](../../prompts/complete-39-round-audit.prompt.md) and execute its instructions.
+Use the canonical prompt at [IA/prompts/complete-39-round-audit.prompt.md](../../IA/prompts/complete-39-round-audit.prompt.md) and execute its instructions.
 
 The source provided by the user is:
 

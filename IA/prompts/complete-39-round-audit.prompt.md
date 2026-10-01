@@ -12,11 +12,11 @@ ${input:source}
 Use the following as the methodological authority:
 
 - [AGENTS.md](../../AGENTS.md)
-- [39-round audit workflow](../../workflows/comprehensive-39-round-audit/SKILL.md)
-- [shared protocols](../../skills/_shared/)
-- [finding schema](../../schemas/finding.md)
-- [audit state schema](../../schemas/audit-state.md)
-- [decision record schema](../../schemas/decision-record.md)
+- [39-round audit workflow](../workflows/comprehensive-39-round-audit/SKILL.md)
+- [shared protocols](../skills/_shared/)
+- [finding schema](../schemas/finding.md)
+- [audit state schema](../schemas/audit-state.md)
+- [decision record schema](../schemas/decision-record.md)
 
 Before starting:
 

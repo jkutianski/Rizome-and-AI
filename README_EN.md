@@ -63,8 +63,8 @@ The visualization should be understood as an **exploratory tool**, not as an exh
 
 The repository also contains the **Skills** and **workflows** used to analyze, review, and audit the project through a modular and reusable methodology.
 
-* [Skills](/skills/)
-* [Workflows](/workflows/)
+* [Skills](/IA/skills/)
+* [Workflows](/IA/workflows/)
 * [AI Readme](AI_README.md)
 
 These resources are part of the research process itself and document how different artificial intelligence tools can participate in the exploration, review, and transformation of the project.

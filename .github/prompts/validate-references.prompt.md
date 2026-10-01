@@ -5,7 +5,7 @@ argument-hint: "Provide the source path or text, the audit scope, and any versio
 agent: "agent"
 ---
 
-Use the canonical prompt at [prompts/validate-references.prompt.md](../../prompts/validate-references.prompt.md) and execute its instructions.
+Use the canonical prompt at [IA/prompts/validate-references.prompt.md](../../IA/prompts/validate-references.prompt.md) and execute its instructions.
 
 The source provided by the user is:
 

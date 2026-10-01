@@ -12,13 +12,13 @@ ${input:source}
 Use the following as the methodological authority:
 
 - [AGENTS.md](../../AGENTS.md)
-- [reference-validation Skill](../../skills/epistemic/reference-validation/SKILL.md)
-- [evidence and citation protocol](../../skills/_shared/evidence-and-citation.md)
-- [analytical discipline protocol](../../skills/_shared/analytical-discipline.md)
-- [language-agnostic analysis protocol](../../skills/_shared/language-agnostic-analysis.md)
-- [output protocol](../../skills/_shared/output-protocol.md)
-- [finding schema](../../schemas/finding.md)
-- [audit state schema](../../schemas/audit-state.md)
+- [reference-validation Skill](../skills/epistemic/reference-validation/SKILL.md)
+- [evidence and citation protocol](../skills/_shared/evidence-and-citation.md)
+- [analytical discipline protocol](../skills/_shared/analytical-discipline.md)
+- [language-agnostic analysis protocol](../skills/_shared/language-agnostic-analysis.md)
+- [output protocol](../skills/_shared/output-protocol.md)
+- [finding schema](../schemas/finding.md)
+- [audit state schema](../schemas/audit-state.md)
 
 Before starting:
 

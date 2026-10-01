@@ -5,7 +5,7 @@ argument-hint: "Provide the source, the candidate node, and its location."
 agent: "agent"
 ---
 
-Use the canonical prompt at [prompts/validate-node-seven-steps.prompt.md](../../prompts/validate-node-seven-steps.prompt.md) and execute its instructions.
+Use the canonical prompt at [IA/prompts/validate-node-seven-steps.prompt.md](../../IA/prompts/validate-node-seven-steps.prompt.md) and execute its instructions.
 
 The node and source provided by the user are:
 
