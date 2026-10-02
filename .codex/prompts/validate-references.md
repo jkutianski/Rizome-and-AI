@@ -1,3 +1,3 @@
 Use the canonical instructions in `IA/prompts/validate-references.prompt.md`.
 
-Perform the complete reference audit on the source supplied in the user's request. Distinguish existence, bibliographic correctness, relevance, evidential support, scope, and currency.
+Execute those canonical instructions against the source or request supplied by the user.

@@ -205,14 +205,20 @@ Rizome-and-AI/
 ├── AGENTS.md
 ├── CLAUDE.md
 ├── README.md
+├── .agents/skills/          Codex Skill projections
+├── .claude/
+│   ├── skills/              Claude Code Skill projections
+│   └── commands/            Claude Code prompt projections
 └── .github/
     ├── copilot-instructions.md
-    └── prompts/             Visual Studio Code projections
+    ├── skills/              GitHub Copilot Skill projections
+    └── prompts/             Visual Studio Code prompt projections
 ```
 
-Prompt projections are also exposed through `.codex/prompts/` for Codex and
-`.claude/commands/` for Claude Code. The canonical prompt definitions remain in
-`IA/prompts/` so the three environments execute the same analytical instructions.
+The canonical Skills and prompts live under `IA/`. The synchronizer projects
+Skills into each agent's native discovery directory and prompts into
+`.github/prompts/`, `.claude/commands/`, and `.codex/prompts/`. These generated
+files are entry points, not alternative canonical sources.
 
 ---
 
@@ -491,6 +497,13 @@ The repository validator also checks the prompt projections:
 
 ```text
 python IA/scripts/validate-repository.py
+```
+
+The agent asset checks and regression tests also run in GitHub Actions. Run the
+tests locally with:
+
+```text
+python -m unittest discover -s IA/scripts/tests -v
 ```
 
 ---

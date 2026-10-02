@@ -160,8 +160,17 @@ IA/
 .codex/prompts/
     Codex prompt projections
 
+.agents/skills/
+    Codex Skill projections
+
+.claude/skills/
+    Claude Code Skill projections
+
 .claude/commands/
     Claude Code command projections
+
+.github/skills/
+    GitHub Copilot Skill projections
 
 .github/prompts/
     Visual Studio Code prompt projections

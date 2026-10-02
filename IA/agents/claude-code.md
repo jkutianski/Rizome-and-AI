@@ -16,14 +16,15 @@ This file does not duplicate or reinterpret those Skills.
 Claude Code
      │
      ├── CLAUDE.md
-   │
-   ├── .claude/commands/
-     │
-     ├── workflows/
-     │
-     ├── skills/
-     │
-     └── schemas/
+     ├── .claude/skills/
+     │     └── generated flat Skill projections
+     ├── .claude/commands/
+     │     └── generated prompt projections
+     └── IA/
+           ├── workflows/
+           ├── skills/
+           ├── schemas/
+           └── prompts/
 ```
 
 The repository remains the source of methodological truth.
@@ -50,9 +51,9 @@ Do not begin analysis from conversational assumptions when repository state is a
 
 # 2. Skill Loading
 
-Claude Code should load only the Skills required for the task.
+Claude Code should load only the Skills required for the task. Native Skill discovery uses `.claude/skills/`; canonical sources and shared protocols remain under `IA/`.
 
-Project commands are authored canonically in `prompts/` and exposed through
+Project commands are authored canonically in `IA/prompts/` and exposed through
 `.claude/commands/`. Command projections use `$ARGUMENTS` and must load the
 corresponding canonical prompt before execution.
 
@@ -60,17 +61,17 @@ Examples:
 
 ```text id="04qj8k"
 Node classification
-→ skills/cartographic/node-validation/SKILL.md
+→ IA/skills/cartographic/node-validation/SKILL.md
 ```
 
 ```text id="qz0z0a"
 Causal claim audit
-→ skills/causal/causality-propagation/SKILL.md
+→ IA/skills/causal/causality-propagation/SKILL.md
 ```
 
 ```text id="k1p4x9"
 Complete audit
-→ workflows/comprehensive-39-round-audit/SKILL.md
+→ IA/workflows/comprehensive-39-round-audit/SKILL.md
 ```
 
 Skills remain the analytical units.
@@ -84,10 +85,10 @@ Claude Code is only their execution environment.
 When a Skill requires them, load:
 
 ```text id="u1yd7s"
-skills/_shared/language-agnostic-analysis.md
-skills/_shared/evidence-and-citation.md
-skills/_shared/analytical-discipline.md
-skills/_shared/output-protocol.md
+IA/skills/_shared/language-agnostic-analysis.md
+IA/skills/_shared/evidence-and-citation.md
+IA/skills/_shared/analytical-discipline.md
+IA/skills/_shared/output-protocol.md
 ```
 
 Do not substitute personal reasoning conventions for these shared protocols.
@@ -99,7 +100,7 @@ Do not substitute personal reasoning conventions for these shared protocols.
 Use:
 
 ```text id="55h2q0"
-schemas/audit-state.md
+IA/schemas/audit-state.md
 ```
 
 as the state contract.
@@ -107,7 +108,7 @@ as the state contract.
 Use:
 
 ```text id="m5x9pk"
-schemas/finding.md
+IA/schemas/finding.md
 ```
 
 for analytical findings.
@@ -115,7 +116,7 @@ for analytical findings.
 Use:
 
 ```text id="g0v2b7"
-schemas/decision-record.md
+IA/schemas/decision-record.md
 ```
 
 for explicit decisions.

@@ -17,28 +17,17 @@ Codex
   │
   ├── AGENTS.md
   │
+  ├── .agents/skills/
+  │     └── generated flat Skill projections
+  │
   ├── .codex/prompts/
   │     └── project prompt projections
   │
-  ├── workflows/
-  │     └── comprehensive-39-round-audit/
-  │
-  ├── skills/
-  │     ├── _shared/
-  │     ├── conceptual/
-  │     ├── cartographic/
-  │     ├── causal/
-  │     ├── critical/
-  │     ├── structural/
-  │     ├── reader/
-  │     ├── authorship/
-  │     ├── epistemic/
-  │     └── synthesis/
-  │
-  └── schemas/
-        ├── finding.md
-        ├── audit-state.md
-        └── decision-record.md
+  └── IA/
+        ├── workflows/
+        ├── skills/
+        ├── schemas/
+        └── prompts/
 ```
 
 Codex is the execution layer over this structure.
@@ -71,15 +60,16 @@ Prefer:
 
 ```text id="0l7f9e"
 AGENTS.md
+.agents/skills/
 .codex/prompts/
-workflows/
-skills/
-schemas/
+IA/workflows/
+IA/skills/
+IA/schemas/
 ```
 
-as the primary methodological sources.
+as the primary methodological sources. `.agents/skills/` is the native discovery projection; canonical Skills and shared protocols remain under `IA/`.
 
-Project prompts are authored canonically in `prompts/` and exposed to Codex through
+Project prompts are authored canonically in `IA/prompts/` and exposed to Codex through
 `.codex/prompts/`. Load the canonical prompt before executing a projection.
 
 Do not infer repository conventions from filenames alone.
@@ -96,12 +86,12 @@ Examples:
 
 ```text id="0h8b8d"
 "Is this really an inter-stem node?"
-→ cartographic/inter-stem-validation
+→ IA/skills/cartographic/inter-stem-validation
 ```
 
 ```text id="7c1v3n"
 "Does this passage imply technological determinism?"
-→ critical/technological-determinism
+→ IA/skills/critical/technological-determinism
 ```
 
 ```text id="l4wh4v"
@@ -116,7 +106,7 @@ Examples:
 For the complete 39-round audit, execute:
 
 ```text id="1f0b8a"
-workflows/comprehensive-39-round-audit/
+IA/workflows/comprehensive-39-round-audit/
 ```
 
 The workflow is authoritative regarding:
@@ -154,19 +144,19 @@ When context becomes too large, preserve state through explicit records rather t
 When a persistent audit state is available, update it according to:
 
 ```text id="7n0v7b"
-schemas/audit-state.md
+IA/schemas/audit-state.md
 ```
 
 Findings must conform to:
 
 ```text id="9xy9wt"
-schemas/finding.md
+IA/schemas/finding.md
 ```
 
 Decisions must conform to:
 
 ```text id="8nd6rq"
-schemas/decision-record.md
+IA/schemas/decision-record.md
 ```
 
 Never store a decision as if it were merely a finding.

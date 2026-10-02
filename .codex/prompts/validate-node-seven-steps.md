@@ -1,3 +1,3 @@
 Use the canonical instructions in `IA/prompts/validate-node-seven-steps.prompt.md`.
 
-Validate the node supplied in the user's request through all seven steps. Preserve the distinction between ordinary node validation and inter-stem validation.
+Execute those canonical instructions against the source or request supplied by the user.

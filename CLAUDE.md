@@ -6,4 +6,4 @@ Read and follow [`AGENTS.md`](AGENTS.md) before substantive work. It is the sour
 
 ## Claude-Specific Execution
 
-Use [`IA/agents/claude-code.md`](IA/agents/claude-code.md) for Claude Code execution guidance. Load canonical Skills, protocols, workflows, schemas, and prompts from `IA/`. Files under `.claude/commands/` are generated prompt projections; the canonical prompts remain in `IA/prompts/`.
+Use [`IA/agents/claude-code.md`](IA/agents/claude-code.md) for Claude Code execution guidance. Load canonical Skills, protocols, workflows, schemas, and prompts from `IA/`. Files under `.claude/skills/` and `.claude/commands/` are generated projections; canonical Skills and prompts remain under `IA/`.

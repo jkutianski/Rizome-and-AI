@@ -17,11 +17,17 @@ GitHub Copilot
        │
        ├── Repository instructions
        │
-       ├── workflows/
+        ├── .github/skills/
+        │     └── generated flat Skill projections
        │
-       ├── skills/
+        ├── .github/prompts/
+        │     └── generated prompt projections
        │
-       └── schemas/
+        └── IA/
+              ├── workflows/
+              ├── skills/
+              ├── schemas/
+              └── prompts/
 ```
 
 The repository is the shared source of truth.
@@ -68,24 +74,24 @@ A task request cannot silently redefine a core methodological distinction.
 
 # 3. Skill Execution
 
-Use the repository Skills as analytical units.
+Use the generated `.github/skills/` Skills for native discovery and `IA/skills/` as their canonical source. Shared protocols remain under `IA/skills/_shared/`.
 
 Examples:
 
 ```text id="j7d6m3"
-skills/conceptual/semantic-precision/
+IA/skills/conceptual/semantic-precision/
 ```
 
 ```text id="x1y5m0"
-skills/cartographic/propagation-analysis/
+IA/skills/cartographic/propagation-analysis/
 ```
 
 ```text id="q8w3p2"
-skills/epistemic/power-mediation-authority/
+IA/skills/epistemic/power-mediation-authority/
 ```
 
 ```text id="a9r6f1"
-workflows/comprehensive-39-round-audit/
+IA/workflows/comprehensive-39-round-audit/
 ```
 
 Do not duplicate Skill contents inside Copilot-specific instructions.
@@ -97,19 +103,19 @@ Do not duplicate Skill contents inside Copilot-specific instructions.
 Findings must follow:
 
 ```text id="3uk7dn"
-schemas/finding.md
+IA/schemas/finding.md
 ```
 
 Audit persistence must follow:
 
 ```text id="v4s1x8"
-schemas/audit-state.md
+IA/schemas/audit-state.md
 ```
 
 Decisions must follow:
 
 ```text id="2m7b5j"
-schemas/decision-record.md
+IA/schemas/decision-record.md
 ```
 
 These schemas guarantee interoperability with other agents.

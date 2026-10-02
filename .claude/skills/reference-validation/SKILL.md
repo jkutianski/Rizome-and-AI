@@ -1,3 +1,8 @@
+---
+name: "reference-validation"
+description: "Audit cited sources for existence, bibliographic accuracy, relevance, and evidential support."
+---
+
 # Reference Validation
 
 ## Purpose

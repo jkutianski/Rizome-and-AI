@@ -114,10 +114,8 @@ Every Skill execution must receive, directly or indirectly:
 
 ```text
 source
-audit_state
-skill
 scope
-constraints
+skill
 ```
 
 ### `source`
@@ -126,7 +124,7 @@ The text or material being analyzed.
 
 ### `audit_state`
 
-The current shared state.
+The current shared state when executing within a persistent or multi-round audit.
 
 ### `skill`
 
@@ -157,6 +155,8 @@ Relevant methodological constraints, including:
 * language configuration;
 * source version;
 * round-specific instructions.
+
+Audit state and constraints are conditional inputs, as defined by the shared Skill Contract. Provide previous findings and relevant decisions when the task or workflow requires them; blind-pass rules may prohibit access to them.
 
 ---
 

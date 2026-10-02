@@ -20,8 +20,7 @@ Every Skill must have:
 * a `SKILL.md` file;
 * a clear analytical purpose;
 * a defined scope;
-* explicit inputs;
-* explicit outputs;
+* any inputs or outputs that depart from the shared defaults below;
 * stated dependencies when applicable.
 
 The Skill name should identify the analytical capability rather than a particular text, author, agent, or project phase.
@@ -65,20 +64,19 @@ Cross-scope findings are permitted when the evidence requires them, but the expa
 
 ## 4. Inputs
 
-A Skill may receive:
+A Skill inherits these default inputs:
 
 ```text
 source
 scope
-audit_state
-constraints
-previous_findings
-relevant_decisions
+skill
 ```
 
-Not every Skill requires every input.
+The source is required. Scope is the requested unit of analysis, or the whole source when no narrower scope is specified. The invoked Skill is implicit in its identity.
 
-The Skill must state which inputs are:
+For an ongoing audit, also provide the current Audit State and applicable constraints. Previous findings and relevant decisions are supplied when the task or workflow requires them. Blind passes may prohibit otherwise available context.
+
+A Skill's `Inputs` section is required only when it adds, narrows, or prohibits inputs beyond these defaults. State explicitly which additional inputs are:
 
 * required;
 * optional;
@@ -167,6 +165,8 @@ A Skill produces analytical findings using the common Finding contract:
 ```text
 schemas/finding.md
 ```
+
+This Finding contract is the default output for every Skill, including an explicit negative finding when no issue is established. Skills need an `Output` section only when they require a specialized report structure or additional deliverable.
 
 A finding should distinguish:
 
