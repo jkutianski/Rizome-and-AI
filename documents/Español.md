@@ -190,7 +190,7 @@ Relevancia y autoridad tampoco son equivalentes: algo puede adquirir una posici�
 
 La tensión central del nudo aparece entonces entre la capacidad de los sistemas de IA para organizar, seleccionar y mediar información y la distribución del poder para determinar qué adquiere visibilidad, relevancia y autoridad dentro de un campo de conocimiento. La concentración no está solamente en la información producida, sino en las condiciones que permiten que determinadas informaciones, interpretaciones o respuestas sean encontradas, relacionadas, sintetizadas, legitimadas y tomadas en consideración.
 
-Esta transformación puede observarse en distintas tensiones:
+La tensión central se despliega aquí en varias direcciones:
 
 * **Centralización de la relevancia:** los sistemas de IA pueden concentrar la determinación de qué información adquiere visibilidad y relevancia en los sistemas, instituciones y actores que los diseñan, entrenan, implementan o controlan. La capacidad de seleccionar y ordenar deja de estar distribuida únicamente entre múltiples mediadores y puede desplazarse hacia nuevas formas de intermediación.
 
@@ -206,9 +206,9 @@ Esta transformación puede observarse en distintas tensiones:
 
 * **Reconfiguración de la producción y circulación del conocimiento:** la incorporación de IA en tareas de búsqueda, síntesis, interpretación y distribución modifica no solo las prácticas mediante las cuales se produce conocimiento, sino también los recorridos por los que ese conocimiento circula y adquiere visibilidad.
 
-Estas tensiones producen una transformación que puede propagarse hacia otros espacios. La IA puede modificar las condiciones bajo las cuales la información adquiere relevancia y autoridad, pero esas condiciones no permanecen estáticas frente a su expansión. Las instituciones, los usuarios, los productores de conocimiento y otros actores comienzan a adaptar sus prácticas a una mediación cada vez más presente, generando nuevas formas de búsqueda, validación, circulación y control. Se configura así un circuito en el que la IA transforma las condiciones de mediación y las transformaciones de esas prácticas vuelven a modificar las condiciones bajo las cuales la IA participa en ellas.
+El efecto de estas tensiones no queda contenido en este nudo. La IA puede modificar las condiciones bajo las cuales la información adquiere relevancia y autoridad, pero esas condiciones no permanecen estáticas frente a su expansión. Las instituciones, los usuarios, los productores de conocimiento y otros actores comienzan a adaptar sus prácticas a una mediación cada vez más presente, generando nuevas formas de búsqueda, validación, circulación y control. Se configura así un circuito en el que la IA transforma las condiciones de mediación y las transformaciones de esas prácticas vuelven a modificar las condiciones bajo las cuales la IA participa en ellas.
 
-Esta dinámica puede propagarse en distintas direcciones:
+Desde allí, el efecto puede extenderse en distintas direcciones:
 
 * **Transformación de la autoridad epistémica:** cuando las respuestas de IA se convierten en puntos privilegiados de acceso a la información, puede modificarse la relación entre fuentes, expertos, instituciones y usuarios, desplazando parcialmente las formas tradicionales mediante las cuales se reconoce autoridad.
 
@@ -230,7 +230,7 @@ La evaluación del conocimiento parte de una operación que muchas veces permane
 
 La tensión no consiste solamente en determinar si una producción fue realizada con IA, sino en que comienza a volverse menos estable la relación entre producción, evidencia y atribución de conocimiento. La evaluación pretende reconocer una capacidad a partir de una manifestación observable, pero cuando esa manifestación surge de una interacción entre sujeto y sistema, el resultado puede dejar de ofrecer una evidencia tan directa de aquello que se intenta evaluar. La IA modifica así las condiciones bajo las cuales una producción puede funcionar como evidencia de que alguien sabe algo.
 
-Esta transformación puede observarse en distintas tensiones:
+La tensión vuelve a abrirse en varios problemas concretos:
 
 - **Resultado y comprensión:** Un resultado correcto puede coexistir con distintos grados de comprensión por parte de quien lo presenta. La IA vuelve menos directa la relación entre la calidad de una producción y la capacidad cognitiva que se pretende evaluar. El resultado conserva su valor, pero su capacidad para funcionar como evidencia cambia cuando parte de las operaciones que condujeron a él pueden haber sido realizadas mediante una interacción con IA.
 
@@ -240,9 +240,9 @@ Esta transformación puede observarse en distintas tensiones:
 
 - **Evidencia y trazabilidad:** Cuando una producción puede resultar de una interacción entre sujeto e IA, la evaluación puede intentar reconstruir qué operaciones corresponden a cada participante. Explicar, defender, modificar o reconstruir una respuesta adquiere entonces valor como evidencia. Pero esta búsqueda de trazabilidad no es neutral: al intentar recuperar la atribución del conocimiento, también modifica las condiciones bajo las cuales la IA puede intervenir en la producción y demostración evaluada.
 
-Estas tensiones producen una transformación que puede propagarse hacia otros espacios. La IA modifica aquello que puede funcionar como evidencia de conocimiento, pero las prácticas de evaluación no permanecen simplemente a la espera de esa modificación. Al cambiar sus formas de observar, demostrar y atribuir capacidades, comienzan a establecer nuevas condiciones para la participación de la IA. Se configura así un circuito de retroalimentación en el que la IA transforma las condiciones de evaluación y las transformaciones de la evaluación vuelven a modificar las condiciones bajo las cuales la IA puede participar en la producción y demostración del conocimiento.
+Lo que cambia aquí no queda limitado a la situación evaluativa. La IA modifica aquello que puede funcionar como evidencia de conocimiento, pero las prácticas de evaluación no permanecen simplemente a la espera de esa modificación. Al cambiar sus formas de observar, demostrar y atribuir capacidades, comienzan a establecer nuevas condiciones para la participación de la IA. Se configura así un circuito de retroalimentación en el que la IA transforma las condiciones de evaluación y las transformaciones de la evaluación vuelven a modificar las condiciones bajo las cuales la IA puede participar en la producción y demostración del conocimiento.
 
-Esta dinámica puede propagarse en distintas direcciones:
+A partir de ese desplazamiento aparecen otras consecuencias:
 
 - **Reorganización de las prácticas de evaluación:** cambian las formas de observar, demostrar y reconstruir el conocimiento cuando una producción puede estar mediada por IA.
 
