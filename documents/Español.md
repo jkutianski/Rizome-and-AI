@@ -226,7 +226,7 @@ Este nudo se conecta directamente con **IA + Evaluación del conocimiento**, per
 
 ### IA + Evaluación del conocimiento
 
-La evaluación del conocimiento parte de una operación que muchas veces queda implícita: una producción puede ser el resultado de una interacción entre una persona y un sistema, mientras que el producto final no hace necesariamente visible el proceso a través del cual fue producido. La investigación reciente sobre evaluación con IA generativa ha comenzado a distinguir entre la evaluación del resultado, la evaluación del proceso y la capacidad del usuario de la herramienta para juzgar sus resultados [^21]. A partir de esta distinción surge una pregunta diferente: ¿qué podemos inferir acerca de las operaciones realizadas por una persona a partir de una producción que se ha constituido en interacción con un sistema?
+La evaluación del conocimiento parte de una operación que muchas veces queda implícita: una producción puede ser el resultado de una interacción entre una persona y un sistema, mientras que el producto final no hace necesariamente visible el proceso a través del cual fue producido. La investigación reciente sobre evaluación con IA generativa ha comenzado a distinguir entre la evaluación de los resultados generados por IA, la evaluación de los procesos de interacción con ella y el desarrollo de la capacidad para juzgar la calidad de esos resultados [^21]. A partir de esta distinción surge una pregunta diferente: ¿qué podemos inferir acerca de las operaciones realizadas por una persona a partir de una producción que se ha constituido en interacción con un sistema?
 
 La tensión no consiste solamente en determinar si una producción fue realizada con IA, sino en que comienza a volverse menos estable la relación entre producción, evidencia y atribución de conocimiento. La evaluación pretende reconocer una capacidad a partir de una manifestación observable, pero cuando esa manifestación surge de una interacción entre sujeto y sistema, el resultado puede dejar de ofrecer una evidencia tan directa de aquello que se intenta evaluar. La IA modifica así las condiciones bajo las cuales una producción puede funcionar como evidencia de que alguien sabe algo.
 
@@ -300,4 +300,6 @@ La IA no elimina la necesidad de evaluar el conocimiento; modifica las condicion
 
 [^20]: Google Cloud. (s.f.). [Cloud TPU](https://cloud.google.com/tpu). Google. Recuperado el 7 de septiembre de 2026.
 
-[^21]: Bouda, D., & Ajjawi, R. (2024). [“Developing evaluative judgement for a time of generative artificial intelligence.” Assessment & Evaluation in Higher Education](https://www.tandfonline.com/doi/full/10.1080/02602938.2024.2335321?utm_source=chatgpt.com), 49(7), 893–905.
+[^21]: Bearman, M., Tai, J., Dawson, P., Boud, D., & Ajjawi, R. (2024). [Developing evaluative judgement for a time of generative artificial intelligence.
+Assessment & Evaluation in Higher Education](https://www.tandfonline.com/doi/full/10.1080/02602938.2024.2335321?utm_source=chatgpt.com), 49(6), 893–905.
+DOI: 10.1080/02602938.2024.2335321
