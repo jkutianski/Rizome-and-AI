@@ -300,4 +300,4 @@ La IA no elimina la necesidad de evaluar el conocimiento; modifica las condicion
 
 [^20]: Google Cloud. (s.f.). [Cloud TPU](https://cloud.google.com/tpu). Google. Recuperado el 7 de septiembre de 2026.
 
-[^21]: Massachusetts Institute of Technology. (2024). [AI and education: Policy and practice](https://aiandeducation.mit.edu/report/).
+[^21]: Bouda, D., & Ajjawi, R. (2024). [“Developing evaluative judgement for a time of generative artificial intelligence.” Assessment & Evaluation in Higher Education](https://www.tandfonline.com/doi/full/10.1080/02602938.2024.2335321?utm_source=chatgpt.com), 49(7), 893–905.
